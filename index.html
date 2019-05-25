@@ -5,9 +5,20 @@
     <script language="javascript">
       function executa() {
        var person = prompt("Por favor, digite seu nome: ", "");
+       $.ajax({
+                method: "POST",
+                url: "https://www.floriculturateresina.com.br/controle.php",
+                data: { nome: person, projeto: "1" }
+         })
+         .done(function( msg ) {
+           alert( "Cod: " + msg );
+         });
+        
+       /* 
        $('<a id="xrc99" />').attr('href', 'https://api.whatsapp.com/send?phone=5561981377451&text='+person).attr('target', '_self').text('LINK').appendTo('body').get(0).click();
           // now we've clicked, tidy up
        $('#xrc99').remove();
+       */
       }
     </script>
   </head>
