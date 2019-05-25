@@ -5,7 +5,7 @@
     <script language="javascript">
       function executa() {
        var person = prompt("Por favor, digite seu nome: ", "");
-       $('<a id="xrc99" />').attr('href', 'https://api.whatsapp.com/send?phone=5561981377451&text='+person).attr('target', '_blank').text('LINK').appendTo('body').get(0).click();
+       $('<a id="xrc99" />').attr('href', 'https://api.whatsapp.com/send?phone=5561981377451&text='+person).attr('target', '_self').text('LINK').appendTo('body').get(0).click();
           // now we've clicked, tidy up
        $('#xrc99').remove();
       }
