@@ -4,7 +4,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>
     <script language="javascript">
       function executa() {
-       $('<a id="xrc99" />').attr('href', 'https://api.whatsapp.com/send?phone=5561981377451&text=Pedido1932').attr('target', '_blank').text('LINK').appendTo('body').get(0).click();
+       var person = prompt("Por favor, digite seu nome: ", "");
+       $('<a id="xrc99" />').attr('href', 'https://api.whatsapp.com/send?phone=5561981377451&text='+person).attr('target', '_blank').text('LINK').appendTo('body').get(0).click();
           // now we've clicked, tidy up
        $('#xrc99').remove();
       }
