@@ -12,14 +12,10 @@
          })
          .done(function( msg ) {
            alert( "Cod: " + msg );
-         });
-        
-       
-       $('<a id="xrc99" />').attr('href', 'https://api.whatsapp.com/send?phone=5561981377451&text=Número do pedido:'+Msg+'. Cliente: ' +
+           $('<a id="xrc99" />').attr('href', 'https://api.whatsapp.com/send?phone=5561981377451&text=Número do pedido:'+Msg+'. Cliente: ' +
                                   person).attr('target', '_self').text('LINK').appendTo('body').get(0).click();
-          // now we've clicked, tidy up
-       $('#xrc99').remove();
-       
+           $('#xrc99').remove();
+         });
       }
     </script>
   </head>
