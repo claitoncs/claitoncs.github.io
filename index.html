@@ -11,9 +11,7 @@
                 data: { nome: person, projeto: "1" }
          })
          .done(function( msg ) {
-           alert( "Cod: " + msg );
-           $('<a id="xrc99" />').attr('href', 'https://api.whatsapp.com/send?1=pt_BR&phone=5561981377451&text=Número do pedido:'+msg+'. Cliente: ' +
-                                  person).attr('target', '_self').text('LINK').appendTo('body').get(0).click();
+           $('<a id="xrc99" />').attr('href', 'https://api.whatsapp.com/send?1=pt_BR&phone=5561981377451').attr('target', '_self').text('LINK').appendTo('body').get(0).click();
            $('#xrc99').remove();
          });
       }
